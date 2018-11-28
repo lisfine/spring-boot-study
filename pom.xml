@@ -3,11 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>spring-boot-study</groupId>
+    <groupId>com.lhr</groupId>
     <artifactId>spring-boot-study</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
+    <packaging>pom</packaging>
     <name>spring-boot-study</name>
     <description>Demo project for Spring Boot</description>
 
@@ -15,8 +14,16 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.3.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
+
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -46,5 +53,9 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>spring-boot-study-data-redis</module>
+        <module>spring-boot-study-data-redis</module>
+    </modules>
 
 </project>
