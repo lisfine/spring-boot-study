@@ -1,4 +1,4 @@
-package springbootstudentstockredis.springbootstudentstockredis;
+package com.lhr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
